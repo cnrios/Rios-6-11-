@@ -1,13 +1,1 @@
-
-name: cp
- 
- on: [push]
-
-jobs:
- build:
-  runs-on: ubuntu-latest
-
-    steps:
-
-      - name: echo a cp
-        run:  cp [Origen] [Destino]
+cp [Origen] [Destino]
