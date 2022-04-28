@@ -1,0 +1,16 @@
+
+name: crear proyecto 
+
+on: [push]
+
+
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: echo a stringg
+        run:  echo "hello world"
+
