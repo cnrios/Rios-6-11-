@@ -7,7 +7,7 @@ public class suma
     public static void main(String[] args)
     {
 
-        int n1, n2, Suma;
+        int n1, n2, Suma, Resta, Multiplicacion, Division;
 
         Scanner teclado = new Scanner( System.in );
 
@@ -17,9 +17,24 @@ public class suma
         System.out.print("numero:");
         n2 = teclado.nextInt();
 
+        
         Suma = n1 + n2;
 
+        System.out.println("La suma de " +n1+" + "+n2+ " = " +Suma);
 
-        System.out.prrintln("La suma de" +n1+" + "+n2+ ".");
+        Resta = n1 - n2;
+
+        System.out.println("La Resta de " +n1+ " - " +n2+ " = " +Resta);
+        
+        Multiplicacion = n1 * n2;
+        
+        System.out.println("La Multiplicacion de " +n1+ " * " +n2+ " = " +Multiplicacion);
+        
+        Division = n1 / n2;
+        
+        System.out.println("La Division de " +n1+ " / " +n2+ " = " +Division);
+        
+
+
     }
 }
