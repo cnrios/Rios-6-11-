@@ -32,4 +32,10 @@ public class calculadoratest {
     public void divisionTets() {
         assertEquals(calculator.dividir(3, 1), 3);
     }
+
+    @Test
+    public void raizTest(){
+
+        asserEquals(calculator.raiz(a 1, b 2, c 4), -2, 2);
+    }
 }

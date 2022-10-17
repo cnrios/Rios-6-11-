@@ -18,4 +18,7 @@ public class Calculator {
         return num1 / num2;
     }
 
+    public doyble raiz (int a, int b, int c){
+        return -b+-Math.sqrt((b*b)- (4*a*c)) /2*a;
+    }
 }
