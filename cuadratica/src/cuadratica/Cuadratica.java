@@ -2,10 +2,12 @@ package cuadratica;
 
 public class Cuadratica {
 
-    public static double [] cuadratica(int a, int b, int c) {
-        double x1 = (-b - (Math.sqrt(b * b) - 4 * a * b) / a * 2);
-        double x2 = (-b + (Math.sqrt(b * b) - 4 * a * b) / a * 2);
+public double raiz (int a, int b, int c) {
 
-        return new double[0];
-    }
+   return  -b+-Math.sqrt((b*b) - (4 * a * c)) / 2 * a;
+
 }
+
+
+}
+
