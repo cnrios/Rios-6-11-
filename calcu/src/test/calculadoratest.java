@@ -31,7 +31,7 @@ public class calculadoratest {
     }
 
     @Test
-    public void divisionTets() {
+    public void divisionTest() {
         assertEquals(calcu.dividir(3, 1), 3);
     }
 
@@ -39,22 +39,21 @@ public class calculadoratest {
     //malir sal
 
     @Test
-    public void sumarTestM() {
+    public void sumasTest() {
         assertNotEquals(calcu.suma(1, 1), 100);
     }
 
     @Test
-    public void restarTestM() {
+    public void restaTestMAl() {
         assertNotEquals(calcu.resta(1, 1), 300);
     }
-
     @Test
-    public void divTestM() {
+    public void divTestmal() {
         assertNotEquals(calcu.dividir(1,1 ), 1000);
     }
 
     @Test
-    public void porTestM() {
+    public void MULTITestMAL() {
         assertNotEquals(calcu.multiplicar(3, 1), 600);
     }
 }
