@@ -5,6 +5,7 @@ import cuadratica.Cuadratica;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotEquals;
 
 public class CuadraticaTest{
     Cuadratica calculator = new Cuadratica();
@@ -17,9 +18,11 @@ public class CuadraticaTest{
 
     }
 
+
+    //malir sal
     @Test
     public void cuadritestmalo() {
-        assertEquals(String.valueOf(new float[][]{calculator.cuadra(1, 2, 1)}), 10, 2);
+        assertNotEquals(String.valueOf(new float[][]{calculator.cuadra(1, 2, 1)}), 10, 2);
 
     }
 }
