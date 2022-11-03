@@ -4,17 +4,23 @@ import cuadratica.Cuadratica;
 
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 public class CuadraticaTest{
     Cuadratica calculator = new Cuadratica();
-    @Test
-    public void raizTest() {
 
-        assertEquals(calculator.raiz(1, 2, -8), -4,2 );
+    @Test
+        public void cuadriTest() {
+
+        assertEquals(String.valueOf(new float[][]{calculator.cuadra(1, 2, 1)}), 1, 1);
+
 
     }
-    private void assertEquals(double raiz, int i, int j) {
+
+    @Test
+    public void cuadritestmalo() {
+        assertEquals(String.valueOf(new float[][]{calculator.cuadra(1, 2, 1)}), 10, 2);
 
     }
 }
+

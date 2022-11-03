@@ -1,6 +1,6 @@
-package calcu;
+package CALCU;
 
-public class Calculator {
+public class calcu {
 
     public static int suma (int num1, int num2){
         return num1 + num2;
@@ -19,3 +19,4 @@ public class Calculator {
     }
 
 }
+
