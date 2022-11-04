@@ -15,8 +15,10 @@ public class calcu {
     }
 
     public static double dividir (int num1, int num2){
-        return num1 / num2;
+        return num1 / num2 ;
     }
-
+    public static int cuadrados (int num1 ){
+        return num1*num1 ;
+    }
 }
 

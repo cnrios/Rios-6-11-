@@ -2,15 +2,15 @@ package cuadratica;
 
 public class Cuadratica {
 
-   public static float[] cuadra(float a,float b, float c){
-      float b2 = b * b;
-      float cuentaI= b2 - (4* a * c);
-      float raiz = (float) Math.sqrt(cuentaI);
+   public static double[] cuadra(double a, double b, double c){
+      double b2 = b * b;
+      double cuentaI= b2 - (4*a*c);
+      double raiz = (double) Math.sqrt(cuentaI);
 
-      float SP = ((-b)+ raiz) / a * 2;
-      float RP = ((-b)- raiz) / a * 2;
+      double SP = ((-b + raiz) / 2*a);
+      double RP = ((-b - raiz) / 2*a);
 
-      float[] result= {SP, RP};
+      double result[]= {SP, RP};
       return result;
 
    }

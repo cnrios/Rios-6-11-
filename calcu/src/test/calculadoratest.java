@@ -21,7 +21,7 @@ public class calculadoratest {
     @Test
     public void restaTest() {
 
-        assertEquals(calcu.resta(1, 1), 0);
+        assertEquals(calcu.resta(6, 1), 0);
     }
 
     @Test
@@ -32,7 +32,12 @@ public class calculadoratest {
 
     @Test
     public void divisionTest() {
-        assertEquals(calcu.dividir(3, 1), 3);
+        assertEquals(calcu.dividir(3, 0), 3);
+    }
+
+    @Test
+    public void cuadradosTest(){
+        assertEquals(calcu.cuadrados(3),9);
     }
 
 
