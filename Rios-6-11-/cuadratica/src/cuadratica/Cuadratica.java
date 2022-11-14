@@ -2,10 +2,21 @@ package cuadratica;
 
 public class Cuadratica {
 
-   public ( float Num1,  float Num2){
+   public int suma( int Num1,  int Num2){
       return  Num1 + Num2;
    }
 
+   public int resta( int Num1,  int Num2){
+      return  Num1 - Num2;
+   }
+
+   public int multi( int Num1,  int Num2){
+      return  Num1 * Num2;
+   }
+
+   public int div( int Num1,  int Num2){
+      return  Num1 / Num2;
+   }
 
    public static double[] cuadra(double a, double b, double c){
       double b2 = b * b;
