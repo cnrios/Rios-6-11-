@@ -31,8 +31,12 @@ public class Calcu {
     }
 
     @GetMapping("/Div/{Num1}/{Num2}")
-    float miDiv(@PathVariable float Num1, @PathVariable float Num2){
-        return Num1 / Num2;
+
+    float miDiv(@PathVariable float Num1, @PathVariable float Num2) {
+        if (Num2 != 0) {
+            return Num1 / Num2;
+        }
+        throw new ArithmeticException("No dividir por 0");
     }
 
     @GetMapping("/cua/{a}/{b}/{c}")

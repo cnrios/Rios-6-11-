@@ -22,7 +22,7 @@ public class CuadraticaTest {
     @Test
     public void resta(){
         assertEquals(calculator.resta(2,1),1);
-        assertNotEquals(calculator.resta(2,1),10;
+        assertNotEquals(calculator.resta(2,1),10);
     }
     @Test
     public void multi(){
