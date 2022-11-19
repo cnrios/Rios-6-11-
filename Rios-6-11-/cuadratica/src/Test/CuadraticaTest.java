@@ -14,27 +14,49 @@ public class CuadraticaTest {
 
 
     @Test
-    public void suma(){
-        assertEquals(calculator.suma(1,2),3);
+    public void suma() {
+        assertEquals(calculator.suma(1, 2), 3);
+    }
+    @Test
+            public void sum(){
         assertNotEquals(calculator.suma(1,2),5);
     }
 
     @Test
-    public void resta(){
-        assertEquals(calculator.resta(2,1),1);
+    public void resta() {
+        assertEquals(calculator.resta(2, 1), 1);
+    }
+    @Test
+            public void res(){
         assertNotEquals(calculator.resta(2,1),10);
     }
     @Test
-    public void multi(){
-        assertEquals(calculator.multi(1,2),2);
-        assertNotEquals(calculator.multi(1,2),5);
+    public void multi() {
+        assertEquals(calculator.multi(1, 2), 2);
+
     }
     @Test
-    public void div(){
-        assertEquals(calculator.div(2,1),2);
-        assertNotEquals(calculator.div(2,1),5);
+    public void multi2(){
+        assertNotEquals(calculator.multi(1,2),5);
     }
 
+
+
+
+    @Test
+    public void DivisionTest(){
+        assertNotEquals(calculator.div(5, 0), 1);
+    }
+
+    @Test
+    public void DivisionTest2(){
+        assertEquals(calculator.div(20, 10), 2);
+    }
+
+    @Test
+    public void DivisionTest3() {
+        assertEquals(calculator.div(0, 10), 0);
+    }
     @Test
     public void cuadraTest() {
         float[] lista = {-1, 0};
@@ -49,6 +71,3 @@ public class CuadraticaTest {
         assertArrayEquals(calculator.cuadra(1, 4, (-5)), result, 0);
     }
 }
-
-
-    //malir sal

@@ -14,6 +14,9 @@ public class CalcuApiApplication {
 
 		SpringApplication.run(CalcuApiApplication.class , args);
 
+		logger.debug("MI MENSAJE DEBUg");
+
 	}
+
 
 }

@@ -9,6 +9,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class Calcu {
 
+
+    @GetMapping("/hola")
+    String miHOLA(){
+        return "HOLA MUNDO";
+    }
+
     @GetMapping("/Suma/{Num1}/{Num2}")
     float miSuma(@PathVariable float Num1, @PathVariable float Num2){
         return  Num1 + Num2;
@@ -25,8 +31,12 @@ public class Calcu {
     }
 
     @GetMapping("/Div/{Num1}/{Num2}")
-    float miDiv(@PathVariable float Num1, @PathVariable float Num2){
-        return Num1 / Num2;
+
+    float miDiv(@PathVariable float Num1, @PathVariable float Num2) {
+        if (Num2 != 0) {
+            return Num1 / Num2;
+        }
+        throw new ArithmeticException("No existe la divicion por 0");
     }
 
     @GetMapping("/cua/{a}/{b}/{c}")
@@ -34,6 +44,9 @@ public class Calcu {
         double b2 = b * b;
         double cuentaI= b2 - (4*a*c);
         double raiz = (double) Math.sqrt(cuentaI);
+
+        double cuenta = (double )raiz;
+        double veri =cuenta;
 
         double SP = ((-b + raiz) / 2*a);
         double RP = ((-b - raiz) / 2*a);
@@ -43,5 +56,6 @@ public class Calcu {
     }
 
 
-    }
+
+}
 

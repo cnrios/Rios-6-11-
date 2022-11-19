@@ -1,34 +1,49 @@
 package cuadratica;
 
+import java.lang.constant.Constable;
+
 public class Cuadratica {
 
-   public int suma( int Num1,  int Num2){
-      return  Num1 + Num2;
+   public int suma(int Num1, int Num2) {
+      return Num1 + Num2;
    }
 
-   public int resta( int Num1,  int Num2){
-      return  Num1 - Num2;
+   public int resta(int Num1, int Num2) {
+      return Num1 - Num2;
    }
 
-   public int multi( int Num1,  int Num2){
-      return  Num1 * Num2;
+   public int multi(int Num1, int Num2) {
+      return Num1 * Num2;
    }
 
-   public int div( int Num1,  int Num2){
-      return  Num1 / Num2;
+   public Constable div(int Num1, int Num2) {
+      if (Num2 == 0) {
+         return null;
+      } else {
+         int result = Num1 / Num2;
+         return result;
+      }
    }
 
-   public static double[] cuadra(double a, double b, double c){
+   public static double[] cuadra(double a, double b, double c) {
       double b2 = b * b;
-      double cuentaI= b2 - (4*a*c);
+      double cuentaI = b2 - (4 * a * c);
       double raiz = (double) Math.sqrt(cuentaI);
 
-      double SP = ((-b + raiz) / 2*a);
-      double RP = ((-b - raiz) / 2*a);
+      double cuenta = (double )raiz;
 
-      double result[]= {SP, RP};
-      return result;
 
+      double verificacion = cuenta;
+
+      if (verificacion % 2 == 0){
+         double SP = ((-b + raiz) / 2 * a);
+         double RP = ((-b - raiz) / 2 * a);
+
+         double result[] = {SP, RP};
+         return result;
+
+      }
+      return null;
    }
 }
 
