@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------
+Test set: com.CalcuAPi.Calcu.CalcuApiApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 21, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 2.11 s <<< FAILURE! - in com.CalcuAPi.Calcu.CalcuApiApplicationTests
+Cuadratica3  Time elapsed: 0.026 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Expected java.lang.ArithmeticException to be thrown, but nothing was thrown.
+	at com.CalcuAPi.Calcu.CalcuApiApplicationTests.Cuadratica3(CalcuApiApplicationTests.java:129)
+
+Cuadratica4  Time elapsed: 0.003 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Expected java.lang.ArithmeticException to be thrown, but nothing was thrown.
+	at com.CalcuAPi.Calcu.CalcuApiApplicationTests.Cuadratica4(CalcuApiApplicationTests.java:135)
+
+midiv4  Time elapsed: 0.004 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: not equal but was: <-2.0>
+	at com.CalcuAPi.Calcu.CalcuApiApplicationTests.midiv4(CalcuApiApplicationTests.java:92)
+
+micua  Time elapsed: 0.003 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected array was <null>
+	at com.CalcuAPi.Calcu.CalcuApiApplicationTests.micua(CalcuApiApplicationTests.java:104)
+

@@ -41,14 +41,15 @@ public class Calcu {
 
     @GetMapping("/cua/{a}/{b}/{c}")
     static double[] miCua(@PathVariable double a, @PathVariable double b, @PathVariable double c) {
-        double b2 = b * b;
-        double cuentaI = b2 - (4 * a * c);
-        double raiz = (double) Math.sqrt(cuentaI);
+        if (a != 0) {
+            double b2 = b * b;
+            double cuentaI = b2 - (4 * a * c);
+            double raiz = (double) Math.sqrt(cuentaI);
 
-        double cuenta = (double) raiz;
-        double veri = cuenta;
+            double cuenta = (double) raiz;
+            double veri = cuenta;
 
-        if (veri % 2 == 0) {
+
             double SP = ((-b + raiz) / 2 * a);
             double RP = ((-b - raiz) / 2 * a);
 
@@ -56,9 +57,8 @@ public class Calcu {
             return result;
 
         }
-        return null;
+
+        throw new ArithmeticException("a nno tiene q ser 0");
     }
-
-
 }
 

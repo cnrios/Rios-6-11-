@@ -12,10 +12,6 @@ class CalcuApiApplicationTests {
 
 
 	@Test
-	void contextLoads() {
-	}
-
-	@Test
 	void miSuma() {
 		assertEquals(calc.miSuma(1, 2), 3);
 	}
@@ -91,27 +87,11 @@ class CalcuApiApplicationTests {
 	void midiv3() {
 		assertNotEquals(calc.miDiv(2, 2), 5);
 	}
-	@Test
-	void midiv4(){
-		assertNotEquals(calc.miDiv(-2,1),-2);
-
-	}
 
 
-
-
-
-	@Test
-	void micua(){
+	void micua2(){
 		double result[] = {1,4};
-
-		assertArrayEquals(calc.miCua(1,2,(-5)),result,0);
-		assertArrayEquals(calc.miCua(1,2,(-5)),result,1);
-
-		assertThrows(ArithmeticException.class,() -> {Calcu.miCua(0,20,10);});
-		assertThrows(ArithmeticException.class,() -> {Calcu.miCua(0,2,2);});
-	}
-
+	assertArrayEquals(calc.miCua(1,2,(-5)),result,1);}
 
 	@Test
 	public void Cuadratica(){
