@@ -1,11 +1,8 @@
 package com.CalcuAPi.Calcu;
 
-import org.junit.jupiter.api.Assertions;
 
 import org.junit.jupiter.api.Test;
-
 import org.springframework.boot.test.context.SpringBootTest;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
@@ -30,10 +27,10 @@ class CalcuApiApplicationTests {
 	void miSuma3() {
 		assertNotEquals(calc.miSuma(1, 2), 4);
 	}
+
 	@Test
 			void miSuma4(){
 		assertNotEquals(calc.miSuma(-1,-2),3);
-
 	}
 
 
@@ -111,8 +108,8 @@ class CalcuApiApplicationTests {
 		assertArrayEquals(calc.miCua(1,2,(-5)),result,0);
 		assertArrayEquals(calc.miCua(1,2,(-5)),result,1);
 
-		Assertions.assertThrows(ArithmeticException.class,() -> {Calcu.miCua(0,20,10);});
-		Assertions.assertThrows(ArithmeticException.class,() -> {Calcu.miCua(0,2,2);});
+		assertThrows(ArithmeticException.class,() -> {Calcu.miCua(0,20,10);});
+		assertThrows(ArithmeticException.class,() -> {Calcu.miCua(0,2,2);});
 	}
 
 
@@ -120,7 +117,7 @@ class CalcuApiApplicationTests {
 	public void Cuadratica(){
 		double result1[] = {-1 , -1};
 
-		Assertions.assertArrayEquals(Calcu.miCua(1,2,1),result1,0);
+		assertArrayEquals(Calcu.miCua(1,2,1),result1,0);
 	}
 
 
@@ -128,19 +125,18 @@ class CalcuApiApplicationTests {
 	public void Cuadratica2(){
 		double result2[] = { 1 , -5};
 
-		Assertions.assertArrayEquals(Calcu.miCua(1,4,(-5)),result2,0);
+		assertArrayEquals(Calcu.miCua(1,4,(-5)),result2,0);
 	}
 
 	@Test
 	public void Cuadratica3(){
-		//Excepciones Matematicas
-		Assertions.assertThrows(ArithmeticException.class,() -> {Calcu.miCua(0,100,300);});
+		assertThrows(ArithmeticException.class,() -> {Calcu.miCua(0,10,30);});
 	}
 
 
 	@Test
 	public void Cuadratica4(){
-		Assertions.assertThrows(ArithmeticException.class,() -> {Calcu.miCua(0,1,1);});
+		assertThrows(ArithmeticException.class,() -> {Calcu.miCua(0,1,1);});
 	}
 
 }

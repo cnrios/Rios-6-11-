@@ -40,21 +40,24 @@ public class Calcu {
     }
 
     @GetMapping("/cua/{a}/{b}/{c}")
-    static double[] miCua(@PathVariable double a, @PathVariable double b, @PathVariable double c){
+    static double[] miCua(@PathVariable double a, @PathVariable double b, @PathVariable double c) {
         double b2 = b * b;
-        double cuentaI= b2 - (4*a*c);
+        double cuentaI = b2 - (4 * a * c);
         double raiz = (double) Math.sqrt(cuentaI);
 
-        double cuenta = (double )raiz;
-        double veri =cuenta;
+        double cuenta = (double) raiz;
+        double veri = cuenta;
 
-        double SP = ((-b + raiz) / 2*a);
-        double RP = ((-b - raiz) / 2*a);
+        if (veri % 2 == 0) {
+            double SP = ((-b + raiz) / 2 * a);
+            double RP = ((-b - raiz) / 2 * a);
 
-        double result[]= {SP, RP};
-        return result;
+            double result[] = {SP, RP};
+            return result;
+
+        }
+        return null;
     }
-
 
 
 }

@@ -20,6 +20,8 @@ public class CuadraticaTest {
         assertNotEquals(calculator.suma(1,2),5);
     }
 
+
+
     @Test
     public void resta() {
         assertEquals(calculator.resta(2, 1), 1);
@@ -28,6 +30,10 @@ public class CuadraticaTest {
             public void res(){
         assertNotEquals(calculator.resta(2,1),10);
     }
+
+
+
+
     @Test
     public void multi() {
         assertEquals(calculator.multi(1, 2), 2);
@@ -35,7 +41,7 @@ public class CuadraticaTest {
     }
     @Test
     public void multi2(){
-        assertNotEquals(calculator.multi(1,2),5);
+        assertEquals(calculator.multi(1,2),5);
     }
 
 
@@ -55,6 +61,7 @@ public class CuadraticaTest {
     public void DivisionTest3() {
         assertEquals(calculator.div(0, 10), 0);
     }
+
     @Test
     public void cuadraTest() {
         float[] lista = {-1, 0};
@@ -67,5 +74,13 @@ public class CuadraticaTest {
         double result[] = {1, -5};
 
         assertArrayEquals(calculator.cuadra(1, 4, (-5)), result, 0);
+    }
+
+    @Test
+    public void cuadreTest1() {
+
+        double result[] = {123, -5};
+
+        assertArrayEquals(calculator.cuadra(1, 4, (-5)), result, 321);
     }
 }

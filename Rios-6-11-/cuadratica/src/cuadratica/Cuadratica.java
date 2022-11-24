@@ -1,5 +1,8 @@
 package cuadratica;
 
+import org.jetbrains.annotations.Contract;
+import org.jetbrains.annotations.Nullable;
+
 import java.lang.constant.Constable;
 
 public class Cuadratica {
@@ -8,7 +11,7 @@ public class Cuadratica {
       return Num1 + Num2;
    }
 
-   public int resta(int Num1, int Num2) {
+   public int resta(int Num1,    int Num2) {
       return Num1 - Num2;
    }
 
@@ -25,7 +28,7 @@ public class Cuadratica {
       }
    }
 
-   public static double[] cuadra(double a, double b, double c) {
+   public static double @Nullable [] cuadra(double a, double b, double c) {
       double b2 = b * b;
       double cuentaI = b2 - (4 * a * c);
       double raiz = (double) Math.sqrt(cuentaI);
